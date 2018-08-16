@@ -15,11 +15,12 @@ images:
 """
 import pygame
 
-from spritebuilder.spritebuilder_dev import SpriteBuilderDev
+# from spritebuilder.spritebuilder_dev import SpriteBuilderDev
+from spritebuilder.spritebuilder import SpriteBuilder
 
 if __name__ == '__main__':
     pygame.init()
     pygame.font.init()
     pygame.key.set_repeat(50, 50)
-    builder = SpriteBuilderDev()
+    builder = SpriteBuilder()
     builder.run()
